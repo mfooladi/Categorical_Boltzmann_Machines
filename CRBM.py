@@ -22,11 +22,10 @@ class CRBM:
         self.probs_shape = tuple(vs_copy)
         self.probs = np.zeros(self.probs_shape)
 
+        print()
+
     def _net_input(self, states):
-        print('states')
-        print(states)
         e_net_sum = 0
-        # partition_func_sum = 0
         e_partition_func = 0
 
         for i in range(self.num_visible):
@@ -43,6 +42,8 @@ class CRBM:
 
         prob_ = e_net / e_partition_func
 
+        print(prob_)
+
         return prob_
 
     def _a_ijk(self):
@@ -52,6 +53,18 @@ class CRBM:
                     input_states = [sj, si, ul]
                     self.probs[sj, si, ul] = self._net_input(input_states)
 
+        return self.probs
+
+    def _o_jk(self):
+        # self.probs_o = np.zeros((4, 5, 5, 5))
+        for yk in range(4):
+            for s1 in range(5):
+                for s2 in range(5):
+                    for s3 in range(5):
+                        input_states = [yk, s1, s2, s3]
+                        print('input_states')
+                        print(input_states)
+                        self.probs[yk, s1, s2, s3] = self._net_input(input_states)
         return self.probs
 
 
@@ -70,13 +83,18 @@ if __name__ == '__main__':
 
     ws = [w1, w2]
 
-    r = CRBM(weights=ws)
+    ws2 = np.random.random_sample((3, 4, 5))
 
-    probs = r._a_ijk()
+    r = CRBM(weights=ws2)
 
-    for i in range(5):
+    # probs = r._a_ijk()
+    probs = r._o_jk()
+
+    print(probs)
+
+    for i in range(4):
         figure(i)
-        barchart(probs[i, :, :])
+        barchart(probs[i])
 
     show()
 
