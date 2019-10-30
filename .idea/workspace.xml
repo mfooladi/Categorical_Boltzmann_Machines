@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d254d8bb-0026-4f21-9658-711fef1c701d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CRBM.py" beforeDir="false" afterPath="$PROJECT_DIR$/CRBM.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CRBM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="81" column="33" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
+            <state relative-caret-position="815">
+              <caret line="122" column="18" selection-start-line="122" selection-start-column="18" selection-end-line="122" selection-end-column="18" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -46,11 +45,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1920" />
-    <option name="y" value="-2" />
-    <option name="width" value="1920" />
-    <option name="height" value="1082" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="535" />
+    <option name="y" value="60" />
+    <option name="width" value="1397" />
+    <option name="height" value="789" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -179,11 +178,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="-2" width="1920" height="1082" extended-state="7" />
-    <editor active="true" />
+    <frame x="57" y="25" width="1863" height="1055" extended-state="6" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15287296" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1576087" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" weight="0.32948583" />
       <window_info anchor="bottom" id="Python Console" weight="0.32948583" />
@@ -191,8 +189,8 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32004198" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.23504722" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32937366" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.23434125" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -200,6 +198,17 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CRBM.py</url>
+          <line>63</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -279,6 +288,12 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_9.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -286,16 +301,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_9.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/CRBM.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="81" column="33" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
+        <state relative-caret-position="815">
+          <caret line="122" column="18" selection-start-line="122" selection-start-column="18" selection-end-line="122" selection-end-column="18" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

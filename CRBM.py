@@ -9,7 +9,7 @@ np.set_printoptions(precision=5, edgeitems=25)
 class CRBM:
     def __init__(self, prob_name):
         self.w1 = np.array([[[3.0, 2.9, 2.8, 2.7, 2.6],
-                   [2.9, 3.0, 2.9, 2.8, 2.7],
+                             [2.9, 3.0, 2.9, 2.8, 2.7],
                    [2.8, 2.9, 3.0, 2.9, 2.8],
                    [2.7, 2.8, 2.9, 3.0, 2.9],
                    [2.6, 2.7, 2.8, 2.9, 3.0]],
@@ -20,17 +20,17 @@ class CRBM:
                    [2.6, 2.7, 2.8, 2.9, 3.0]]])
 
         self.w2 = np.array([[[3.0, 2.9, 2.8, 2.7, 2.6],
-                             [2.6, 2.7, 2.8, 2.9, 3.0],
+                             [3.0, 2.9, 2.8, 2.7, 2.6],
                              [2.4, 2.5, 2.6, 2.7, 2.8],
                              [2.4, 2.5, 2.6, 2.7, 2.8]],
                             [[3.0, 2.9, 2.8, 2.7, 2.6],
                              [2.4, 2.5, 2.6, 2.7, 2.8],
-                             [2.6, 2.7, 2.8, 2.9, 3.0],
+                             [3.0, 2.9, 2.8, 2.7, 2.6],
                              [2.4, 2.5, 2.6, 2.7, 2.8]],
                             [[3.0, 2.9, 2.8, 2.7, 2.6],
                              [2.4, 2.5, 2.6, 2.7, 2.8],
                              [2.4, 2.5, 2.6, 2.7, 2.8],
-                             [2.6, 2.7, 2.8, 2.9, 3.0]]])
+                             [3.0, 2.9, 2.8, 2.7, 2.6]]])
 
         if prob_name == 'transition':
             self.weights = self.w1
@@ -105,7 +105,7 @@ class CRBM:
                         emission_reshape = self.probs.reshape(4, 125)
 
         return emission_reshape
-
+        # return self.probs
 
 if __name__ == '__main__':
 
@@ -113,13 +113,16 @@ if __name__ == '__main__':
     r = CRBM('emission')
 
     # probs = r._a_ijk()
-    result = r._o_jk()
+    probs = r._o_jk()
 
-    # for i in range(4):
-    #     figure(i)
-    #     barchart(probs[i])
-    #
-    # show()
+    for i in range(4):
+        figure(i)
+        barchart(r.probs[i])
+        xlabel('s1')
+        ylabel('s2')
+        zlabel('s3')
+
+    show()
 
 
 
